@@ -6,9 +6,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header> 
+      <h1>CREDIPOWER</h1>
+    </header>
+    <main>
+     <div class="pagInicio">
+      <h1>Bienvenidos a CREDIPOWER</h1> 
+      <p>Aquí podrás registrar tu tarjeta, para poder acceder a realizar tus pagos y compras de manera mucho más accesible, desde la comodidad de tu casa</p> 
+      <h3> Ingrese su datos: </h3>   
+      <div>
+        <label>Nombre</label>
+        <input type="text" placeholder="Nombres" size="30" id="putName"  required />
+        <br>
+        <label>Apellido</label>
+        <input type="text" placeholder="Apellidos" size="30" id="putLastName" required />
+        <br>
+        <label>Fecha de validez</label>
+        <input type="text" placeholder="ej. 12/22" id="putDateValid" size="5" maxlength="5" required />
+        <br>
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="email" size="30" required />
+        <br>
+      </div>
+      <div>
+       <h3>Ingrese su número de tarjeta:</h3>
+        <input type="text" placeholder="ej.9999999999999" maxlength="16" size="16" id="numberCard" required />
+      </div> <br>
+      <nav>
+        <h4>  luego seleccione el tipo de tarjeta a registrar</h4>
+        <img src="./assets/visa.jpg" alt="tarjeta-Visa" id="cardVisa" title="Tarjeta-Visa">
+        <img src="./assets/american_express.jpg" alt="tarjeta-american-express" id="cardAmericanExp" title="Tarjeta-American-Express">
+        <img src="./assets/Diners_Club.jpg" alt="tarjeta-Diners-Club-International" id="cardDiners" title="Tarjeta-Diners-Club-International">
+        <img src="./assets/masterCard.jpg" alt="tarjeta-mastercard" id="cardMasterCard" title="Tarjeta-Mastercard">
+      </nav>
+     </div>
+     <div class="pagVisa hide">
+       <h2> Visa clásica</h2>
+       <p class="numCardVisa"> </p>
+       <p class="nameUser"> </p>
+       <p class="validUntil"> </p> 
+       <!--<button id="btnValidCard" title="validación de tarjeta" > Validar  tarjeta</button>-->
+       <br>
+     </div>
+    
+     </main>
+    <footer>
+      ®Copyright 2022, todos los derechos se encuentran reservados por CREDIPOWER
+    </footer>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
