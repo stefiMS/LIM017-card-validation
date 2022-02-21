@@ -6,52 +6,171 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Encabezado y barra de navegación-->
     <header> 
-      <h1>CREDIPOWER</h1>
-    </header>
-    <main>
-     <div class="pagInicio">
-      <h1>Bienvenidos a CREDIPOWER</h1> 
-      <p>Aquí podrás registrar tu tarjeta, para poder acceder a realizar tus pagos y compras de manera mucho más accesible, desde la comodidad de tu casa</p> 
-      <h3> Ingrese su datos: </h3>   
-      <div>
-        <label>Nombre</label>
-        <input type="text" placeholder="Nombres" size="30" id="putName"  required />
-        <br>
-        <label>Apellido</label>
-        <input type="text" placeholder="Apellidos" size="30" id="putLastName" required />
-        <br>
-        <label>Fecha de validez</label>
-        <input type="text" placeholder="ej. 12/22" id="putDateValid" size="5" maxlength="5" required />
-        <br>
-        <label>Correo Electrónico</label>
-        <input type="email" placeholder="email" size="30" required />
-        <br>
-      </div>
-      <div>
-       <h3>Ingrese su número de tarjeta:</h3>
-        <input type="text" placeholder="ej.9999999999999" maxlength="16" size="16" id="numberCard" required />
-      </div> <br>
-      <nav>
-        <h4>  luego seleccione el tipo de tarjeta a registrar</h4>
-        <img src="./assets/visa.jpg" alt="tarjeta-Visa" id="cardVisa" title="Tarjeta-Visa">
-        <img src="./assets/american_express.jpg" alt="tarjeta-american-express" id="cardAmericanExp" title="Tarjeta-American-Express">
-        <img src="./assets/Diners_Club.jpg" alt="tarjeta-Diners-Club-International" id="cardDiners" title="Tarjeta-Diners-Club-International">
-        <img src="./assets/masterCard.jpg" alt="tarjeta-mastercard" id="cardMasterCard" title="Tarjeta-Mastercard">
+      <h1><img src="./assets/logoCrediTrust.png" alt="logo-CrediTrust"/> CREDITRUST</h1>
+      <nav class="itemsB">
+        <ul>
+          <li>Inicio</li>
+          <li>¿Quiénes somos?</li>
+          <li>Propósito</li>
+          <li>Solicitudes</li>
+          <li>Contáctenos</li>
+        </ul>
       </nav>
-     </div>
-     <div class="pagVisa hide">
-       <h2> Visa clásica</h2>
-       <p class="numCardVisa"> </p>
-       <p class="nameUser"> </p>
-       <p class="validUntil"> </p> 
-       <!--<button id="btnValidCard" title="validación de tarjeta" > Validar  tarjeta</button>-->
-       <br>
-     </div>
-    
-     </main>
+    </header>
+   <!--Página Principal-->
+    <section class="pagMain">
+      <div class="section1">
+        <h2>Bienvenidos a CREDITRUST</h2>
+        <p>Tu financiera que piensa en tí y en tú bienestar económico</p>
+        <img src="./assets/portal-principal/seccion-1.png" alt=imagen portada/>
+      </div>
+      <br>
+      <div class="section2">
+        <h3>¿Quiénes Somos?</h3>
+        <p>Somos una empresa perteneciente al grupo GRECA, dedicada al rubro financiero. Fue fundada en 1963 por los hermanos Robles Gomez, siendo su primera sede el edificio principal de la av. 2 de mayo en Cercado de Lima, hoy en día su sede principal se encuentra en Lince.<figure><img src="./assets/portal-principal/seccion-2.png" alt="Foto del primer edificio de CREDITRUST (1963)"/><figcaption>Foto del primer edificio de CREDITRUST (1963)</figcaption></figure></p>
+      </div>
+      <br>
+      <div class="section3">
+        <h3>PROPÓSITO</h3>
+        <p><img src="./assets/portal-principal/seccion-3.png"/> En CREDITRUST  nos preocupamos por el bienestar y crecimiento económico de nuestros clientes, ofreciéndoles líneas de crédito rentables con una tasa mínima de interés anual. Nuestro equipo se encuentra comprometido en afianzar lazos de confianza con los usuarios ofreciéndoles servicios de calidad, por ello, nos encontramos siempre mejorando nuestras operaciones trabajando con un enfoque más agil satisfaciendo las necesidades de nuestros clientes.</p>
+      </div>
+      <br>
+      <div class="section4">
+        <h3>SOLICITUD</h3>
+        <br>
+        <P>Aquí podrás realizar tu solicitud de línea de crédito o extensión de monto, siguiendo los siguientes pasos:<br>
+        1. Dar click al siguiente botón: "Iniciar Solicitud".<br>
+        2. Completar los datos solicitados.<br>
+        3. Elegir el tipo de tarjeta que posees: Visa, MasterCard, etc.<br>
+        4. Nuestro equipo de seguridad validará tu tarjeta.<br>
+        5. Luego detallarás el monto que desees solicitar como préstamo/extensión de línea de crédito.<br>
+        6. Enviarás la solicitud.<br>
+        7. En un lapso no mayor  a 3 días estarás recibiendo la confirmación y actualización de la línea de crédito. <img src="./assets/portal-principal/seccion-4.png" ></P><br>
+        <button>Iniciar Solicitud</button>
+        <br>
+      </div> 
+      <br> 
+    </section>
+    <br>
+    <!-- Formulario de solicitud -->
+    <section>
+      <div class="formSolicitud">
+        <h1>Solicitud</h1> 
+        <p>Aquí podrás registrar tu tarjeta, para poder acceder a realizar tus pagos
+        <div>
+          <label>Nombre</label>
+          <input type="text" placeholder="Nombres" size="30" id="putName"  required />
+          <br>
+          <label>Apellido</label>
+          <input type="text" placeholder="Apellidos" size="30" id="putLastName" required />
+          <br>
+          <label>Fecha de validez</label>
+          <input type="text" placeholder="ej. 12/22" id="putDateValid" size="5" maxlength="5" required />
+          <br>
+          <label>Correo Electrónico</label>
+          <input type="email" placeholder="email" size="30" required />
+          <br>
+        </div>
+        <div>
+          <h3>Ingrese su número de tarjeta:</h3>
+          <input type="text" placeholder="ej.9999999999999" maxlength="16" size="16" id="numberCard" required />
+        </div> <br>
+        <nav>
+          <h4>  luego seleccione el tipo de tarjeta a registrar</h4>
+          <img src="./assets/visa.jpg" alt="tarjeta-Visa" id="cardVisa" title="Tarjeta-Visa">
+          <img src="./assets/american_express.jpg" alt="tarjeta-american-express" id="cardAmericanExp" title="Tarjeta-American-Express">
+          <img src="./assets/Diners_Club.jpg" alt="tarjeta-Diners-Club-International" id="cardDiners" title="Tarjeta-Diners-Club-International">
+          <img src="./assets/masterCard.jpg" alt="tarjeta-mastercard" id="cardMasterCard" title="Tarjeta-Mastercard">
+        </nav>      
+      </div>
+    </section>
+    <!--sección de validez de la tarjeta-->
+    <section class="valid">
+      <P class="validCard"> Tarjeta Válida</P>
+      <p class="invalidCard">Tarjeta Inválida</p>
+    </section>
+    <!--Diseño de las tarjetas con el número enmascarado-->
+    <section>
+      <!--tarjeta de visa-->
+      <div class="pagVisa hide">
+        <h2> Tarjeta Visa </h2>
+        <div class="visaCardDesign">
+          <img src="./assets/Logos de tarjeta/logo-visa.png" alt="logo-visa" id="logoVisa"/>
+          <img src="./assets/chip/chip-silver.png" alt="chip-Visa" id="chipSilverVisa">
+          <!-- <p>Número de Tarjeta</p>
+          <p class="numCardVisa"> </p>
+          <p class="nameUser"> </p>
+          <p class="validUntil"> </p>  -->
+        </div>
+      </div>
+      <!--tarjeta American Express-->
+      <div class="pagAmex">
+        <h2>Tarjeta American Express</h2>
+        <div class="amexCardDesign">
+          <!-- <img src="./assets/Logos de tarjeta/logo-Masterc.png" alt="logo-amex" id="logoAmex"/> -->
+          <!-- <img src="./assets/chip/chip-silver.png" alt="chip-amex" id="chipSilverAmex"/> -->
+          <!-- <p>Número de Tarjeta</p>
+          <p class="numCardVisa"> </p>
+          <p class="nameUser"> </p>
+          <p class="validUntil"> </p>  -->
+        </div>
+      </div>
+      <!--tarjeta Diners Club International-->
+      <div class="pagDiners">
+        <h2>Tarjeta Diners Club International</h2>
+        <div class="dinersCardDesign">
+          <img src="./assets/Logos de tarjeta/logo-diners-club.png" alt="logo-diners-club" id="logoDiners"/>
+          <img src="./assets/chip/chip-silver.png" alt="chip-diners" id="chipSilverDiners"/>
+          <!-- <p>Número de Tarjeta</p>
+          <p class="numCardVisa"> </p>
+          <p class="nameUser"> </p>
+          <p class="validUntil"> </p>  -->
+        </div>
+
+      </div>
+      <!--tarjeta Mastercard-->
+      <div class="pagMasterCard">
+        <h2>Tarjeta MasterCard</h2>
+        <div class="masterCardDesign">
+          <img src="./assets/Logos de tarjeta/logo-Masterc.png" alt="logo-masterC" id="logoMasterCard"/>
+          <img src="./assets/chip/chip-gold.png" alt="chip-gold" id="chipGoldMaster"/>
+          <!-- <p>Número de Tarjeta</p>
+          <p class="numCardVisa"> </p>
+          <p class="nameUser"> </p>
+          <p class="validUntil"> </p>  -->
+        </div>
+      </div>
+       
+    </section>
+    <!-- <p>Número de Tarjeta</p> -->
+    <section>
+      <p class="numCardVisa"> </p>
+      <p class="nameUser"> </p>
+      <p class="validUntil"> </p> 
+    </section> 
+    <!--solicitud de monto y mensaje de confirmación-->
+    <div>
+      <label>Ingrese monto a solicitar </label>
+      <br>
+      <input type="number" maxlength="10" size="12" id="montoSolicitar" required>
+      <button>Enviar Solicitud</button>
+      <br>
+      <p>Su solicitud ha sido enviado satisfactoriamente  en un lapso no mayor a 3 días le estará llegando  la confirmación y actualización de la línea de crédito al <span id="inputCorreo">  </span>.</p>
+            
+    </div>
+    <!--Contáctenos-->
+    <div>
+      <img src="./assets/portal-principal/seccion-5.png" id="contactUS"/>
+      <p>Ubicación: Jr. Los olivos N°15 - Lince, Lima, Perú. <br>
+        Teléfono: 318 2525<br>
+      Correo: atencionalcliente@creditrust.pe<br>
+      </p>
+      
+    </div>
     <footer>
-      ®Copyright 2022, todos los derechos se encuentran reservados por CREDIPOWER
+      <p> ®Copyright 2022, todos los derechos se encuentran reservados por CREDITRUST</p>
     </footer>
     <script type="module" src="index.js"></script>
   </body>
