@@ -1,3 +1,71 @@
+Nombre del proyecto: 
+# CREDITRUST
+## RESUMEN
+
+Es una plataforma que permite a los usuarios/clientes de CREDITRUST interactuar con el banco para solicitar préstamos o extensión de línea de crédito, donde podrá realizar dichas solicitudes sin necesidad de ir a un banco, para ello deberán completar los datos solicitados en la sección de solicitud, luego deberán ingresar el número de tarjeta y el tipo de tarjeta que posee (VISA, MASTERCARD, etc.) y automaticamente se realizará la validación de la tarjeta, la cual indicará si es válido o inválido el número. 
+ 
+En caso de que el número ingresado sea inválido le saldrá un mensaje que dice que NÚMERO DE TARJETA INVÁLIDO, caso contrario si el número de tarjeta es válido, le saldrá un mensaje TARJETA VÁLIDA. Para el caso de que se confirme la validez de la tarjeta, se dará el acceso para la siguiente página donde se podrá visualizar
+
+## DISEÑO DE PROTOTIPO
+### BOCETO EN PAPEL
+Se diseñó en papel a través de un boceto sobre como sería la experiencia del usuario al navegar por la página, se plasmaron varias pantallas para que el usuario obtenga información
+ 
+ <img src="https://i.postimg.cc/WprJrTSg/boceto.jpg" width=300px heigth=400px>
+
+
+### BOCETO EN FIGMA
+Luego del boceto borrador, se plasmó en figma (liga Figma: https://www.figma.com/file/sI0u2GysCRmiPV4x2vqynJ/prototipo-Card-Validation?node-id=0%3A1)  las slides que se buscaban obtener para dar mayor visualización de como quedaría la página.
+Primero se elaboró una barra de navegación para que el usuario interactue con la sección de su preferencia y obtenga información de la web de CREDITRUST
+
+![Figma-Exp-User.jpg](https://i.postimg.cc/fT5246pt/Figma-Exp-User.jpg)
+
+  >**Dato Importante**
+  >Hoy en día, muchos usuarios antes de adquirir un servicio o un bien, realizan una búsqueda  para revisar las características que poseen las empresas, muchas de ellas las pueden encontrar en las páginas webs que les permiten navegar a través de ellas. A veces la carencia de información podría generar dudas o desconocimientos en potenciales clientes y por muchos otros que pueden estar buscando lo que la empresa ofrece. 
+
+Dentro de esta barra de navegación se encuentra la sección de SOLICITUD, donde el usuario podrá realizar las solicitudes de préstamos o extensión de líneas de crédito en sus tarjetas, para ello deberá ingresar la información solicitada así como también deberá ingresar su número de tarjeta de crédito sobre la cual se llevará a cabo la extensión de línea de crédito, la plataforma validará previamente si el número de tarjeta es válido o no
+
+![solicitud.jpg](https://i.postimg.cc/28fypthD/solicitud.jpg)
+
+Después de ser comprobada la validez de la tarjeta, el usuario podrá seleccionar el tipo de tarjeta que posee y pasará a la siguiente sección donde se visualizará el diseño y los últimos cuatro dígitos del número de la tarjeta. 
+En esta sección podrá ingresar el monto que desea solicitar para que se extienda la línea de crédito, Después de solicitado el monto saldrá un mensaje de confirmación.
+
+![confirmation-Validate.png](https://i.postimg.cc/023t2p5P/confirmation-Validate.png)
+
+### USUARIOS
+Esta plataforma está a destinados a todos los usuarios/afiliados del banco CREDITRUST, quiénes pueden realizar una extensión de su línea de crédito a través de una solicitud. Posterior a ello la financiera realizará las evaluaciones correspondientes  y en un plazo no mayor a 3 días actualizará la línea de crédito.
+
+
+
+
+
+
+
+### Parte Obligatoria
+
+* [X] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [X] `README.md` explica claramente quiénes son los usuarios y su relación con
+  el producto.
+* [X] `README.md` explica claramente cómo el producto soluciona los
+  problemas/necesidades de los usuarios.
+* [X] `README.md` (o otro archivo) contiene tu plan de acción - Objetivos que prioritizaste este proyecto.
+* [X] Usa VanillaJS.
+* [X] No utiliza `this`.
+* [X] Implementa `validator.isValid`.
+* [X] Implementa `validator.maskify`.
+* [X] Pasa linter con configuración provista.
+* [X] Pasa pruebas unitarias.
+* [X] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+  mínimo del 50% de _branches_.
+* [X] Interfaz permite escribir un número para ser validado.
+* [X] Interfaz muestra el resultado de la validación correctamente.
+* [X] Interfaz oculta todos los números escritos excepto los 4 últimos
+
+### Parte Opcional: "Hacker edition"
+
+* [ ] Implementa `validator.getIssuer`.
+* [ ] Interfaz muestra la franquicia de la tarjeta
+
+
 
 
 
