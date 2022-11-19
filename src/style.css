@@ -13,17 +13,17 @@ header{
   height:70px;
   padding: 0px 20px;
   display: flex;
-  position: fixed;
-  z-index: 2;
+ 
 }
 h1{
-  float:left ;
   margin: 15px 15px;
   display: flex;
   align-items: center;
   font-style: oblique;
   font-family :'Courier New', Courier, monospace;
-  font-size: 35px; 
+  width: 15%;
+  font-size: 25px;
+  justify-content: space-evenly;
 }
 h1>img{
   margin: 15px 15px;
@@ -32,11 +32,11 @@ h1>img{
   
 }
 .itemsB{
-  max-width: 100%;
-  margin:auto;
-  height:100%;
-  float:right;
+  width: 85%;
+  margin: auto;
+  height: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 nav > ul{
   height:100%;
@@ -72,18 +72,20 @@ nav > ul > li:hover{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 96.3vh;
+  width: 100%;
+  /* height: 96vh.3; */
   
 }
 
 .section1>div{
   display: flex;
-  max-width: 50%;
+  width: 55%;
   flex-direction: column;
+  align-items: center;
+  padding: 5%;
 }
 .section1>div>h2{
-  font-size: 68px;
+  font-size: 55px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(53, 9, 66);
   font-weight: 250;
@@ -92,8 +94,8 @@ nav > ul > li:hover{
   text-align: center;
   vertical-align: middle;
   align-items: center;
-  max-width: 50%;
-  max-height: 50%;
+  /* max-width: 50%;
+  max-height: 50%; */
 }
 .section1>div>p{
   margin: auto;
@@ -105,14 +107,16 @@ nav > ul > li:hover{
   text-align: center;
   vertical-align: middle;
   align-items: center;
-  max-width: 50%;
-  max-height: 50%;
+  /* max-width: 50%;
+  max-height: 50%; */
 }
 .section1>img{
-  max-height: 100%;
+  /* max-height: 100%; */
   align-content: center ;
-  max-width: 100%;
+  width: 45%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*CSS para la sección 2*/
@@ -125,12 +129,12 @@ nav > ul > li:hover{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 96.3vh;
+  width: 100%;
+  height: 87vh;
 }
 .section2>div{
   display: flex;
-  max-width: 50%;
+  max-width: 45%;
   flex-direction: column;
 }
 .section2>div>h3{
@@ -138,13 +142,13 @@ nav > ul > li:hover{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(4, 29, 25);
   font-weight: 250;
-  box-sizing: content-box;
-  margin:auto;
+  /* box-sizing: content-box;
+  margin:auto;*/
   text-align: center;
-  vertical-align: middle;
+  /*vertical-align: middle;
   align-items: center;
   max-width: 50%;
-  max-height: 50%;
+  max-height: 50%; */
 }
 .section2>div>p{
   margin: auto;
@@ -152,18 +156,19 @@ nav > ul > li:hover{
   font-weight: 150px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(2, 49, 44);
-  box-sizing: content-box;
-  text-align: center;
-  vertical-align: middle;
+  /* box-sizing: content-box; */
+  text-align: justify;
+  padding: 7%;
+  /* vertical-align: middle;
   align-items: center;
   max-width: 50%;
-  max-height: 50%;
+  max-height: 50%; */
 }
 .section2>figure{
-  max-height: 70%;
-  box-sizing: border-box;
-  flex-direction: column;
-  max-width: 60%;
+  /* max-height: 70%; */
+  /* box-sizing: border-box;
+  flex-direction: column; */
+  width: 55%;
 }
 .section2>figure>img{
   height: 100%;
@@ -174,7 +179,7 @@ nav > ul > li:hover{
 }
 figcaption{
   text-align: center;
-  max-width: 50%;
+  width: 50%;
   margin: auto;
 }
 
@@ -189,14 +194,14 @@ figcaption{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 96.3vh;
+  width: 100%;
+  height: 87vh;
   padding: 20px;
 }
 
 .section3>div{
   display: flex;
-  max-width: 50%;
+  width: 55%;
   flex-direction: column;
 }
 
@@ -205,11 +210,11 @@ figcaption{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(29, 4, 75);
   font-weight: 250;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   margin:auto;
-  text-align: center;
+  /* text-align: center;
   vertical-align: middle;
-  align-items: center;
+  align-items: center; */
 
 }
 .section3>div>p{
@@ -217,17 +222,18 @@ figcaption{
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(9, 67, 82);
-  box-sizing: content-box;
-  text-align: center;
-  vertical-align: middle;
-  align-items: center;
-  padding: 20px;
+  /* box-sizing: content-box; */
+  text-align: justify;
+  /* vertical-align: middle;
+  align-items: center; */
+  padding: 7%;
 }
 .section3>img{
   
   display: flex;
   align-content: center ;
   padding: 30px;
+  width: 45%
 }
 
 /*section4 */
@@ -239,53 +245,62 @@ figcaption{
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 96.3vh;
-  padding: 100px 20px
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  /* padding: 100px 20px */
 }
 .section4>.figText{
   display: flex;
+  width: 100%;
+  padding: 1%;
+  align-items: center;
 }
 .section4>.figText>div{
   display: flex;
-  max-width: 50%;
+  margin: 2%;
+  /* width: 98%; */
   flex-direction: column;
   background-color: rgba(233, 155, 53, 0.897);
   border-style: groove ;
   border-radius: 0px 10px;
 }
-
+/* #imgSection4{
+  width: 2%;
+} */
 .section4>.figText>div>h3{
   font-size: 35px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(29, 4, 75);
   font-weight: 250;
-  box-sizing: content-box;
-  margin:auto;
+  /* box-sizing: content-box; */
+  padding:1%;
   text-align: center;
-  vertical-align: middle;
-  align-items: center;
+  /* vertical-align: middle;
+  align-items: center; */
 }
 .section4>.figText>div>p{
-  margin: 10px;
+  padding: 2%;
   font-size: 20px;
   font-weight: 180px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(63, 40, 10);
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   text-align: left ;
-  vertical-align: middle;
-  align-items: center;
+  padding: 5%;
+  /* vertical-align: middle;
+  align-items: center; */
 
 }
-.section4>.figText>img{
-  align-content: center ;
-}
+/* .section4>.figText>img{
+  display: none ;
+} */
 .btnSend{
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 40px;
+  padding: 3%;
+  /* margin: 40px; */
 }
 #btnSolicitud{
   border-radius: 8px;
@@ -294,28 +309,38 @@ figcaption{
   background-color: rgba(104, 43, 33, 0.815);
   font-weight: 200px;
   color: aliceblue;
-  height: 70px;
   align-content: center;
-  margin: 10px 0;
+  padding: 2%;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 /*Página  de solicitud*/
 /*llenado de formulario*/
 .request{
   background:url(./assets/portal-principal/fondos-pagInicial/backgroundValid.jpg);
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100vh;
   padding: 32px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#btnBackMain{
+  padding: 2%;
+  border-radius: 10px;
+  background: #d8f5e3;
+  margin: 5% 0 0;
+  color: #43a1a1;
+  font-weight: 750;
 }
 .formSolicitud{
-  width:500px;
-  height: 650px; 
+  width: 70%;
+  height: 90%; 
   border: 2px solid rgba(15, 68, 68, 0.623);
   border-style: groove;
   background-color: rgba(235, 238, 237, 0.856);
@@ -324,6 +349,12 @@ figcaption{
   position: relative;
   box-sizing: content-box;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.form{
+  width: 90%;
 }
 .formSolicitud>h2{
   text-align: center;
@@ -338,20 +369,28 @@ figcaption{
   margin: 10px; ;
   font-family: Arial, Helvetica, sans-serif;
 }
-.form>.namelabel{
+.namelabel{
   text-align: left;
   font-size: 16px;
+  width: 40%;
   margin: 10px; 
   color: rgb(18, 26, 21);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-  .form>input, #montoSolicitar {
+.form>div{
+  display: flex;
+  padding: 0 3%;
+}
+
+  .form>div>input, #montoSolicitar {
   height: 30px;
   margin:5px 0px;
+  width: 60%;
   border-radius: 5px;
   background-color: rgb(200, 224, 222);
   border-color: rgb(31, 185, 134);
+  text-align: center;
 }
 .inputCard{
   margin:10px;
@@ -397,33 +436,46 @@ figcaption{
 /*sección de validación de tarjeta*/
 .valid{
   flex-direction: column;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.valid>p{
+  width:90%;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  margin: 2%;
+  align-items: center;
+  justify-content: center;
 }
 #incomplete{
   color: rgb(179, 98, 24);
-  height:40px;
+  /* height:40px; */
   font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(231, 180, 121);
-  text-align: center;
-  padding: 10px; 
+  margin: 2%;
+  /* text-align: center;
+  padding: 1%; 
+  margin: 1%; */
 }
 #validCard{
   color: rgb(5, 77, 5);
-  height:40px;
+  /* height:40px; */
   font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(184, 212, 184);
-  text-align: center;
-  padding: 10px;
+  
 }
 #invalidCard{
   color: rgba(122, 7, 7, 0.925) ;
   background-color: rgb(236, 188, 169);
-  height: 40px;
+  /* height: 40px; */
   font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding: 10px;
+  /* text-align: center;
+  padding: 10px; */
 }
 #nextVisa,#nextMaster,#nextDiners{
   padding: 10px;
@@ -441,15 +493,23 @@ figcaption{
 .pagValid{
   background: url(./assets/portal-principal/fondos-pagInicial/backgroundValid.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 /*Diseño de tarjeta Visa*/
 .pagVisa{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
+  /* height: 30%; */
 }
 .visaCardDesign{
-  width: 530px;
+  width: 100%;
+  /* height: 100%; */
   border-radius: 15px;
   background-image: url(./assets/Fondos-de-tarjeta/Back-visaC.jpg);
   flex-direction: column;
@@ -457,7 +517,7 @@ figcaption{
 .imageCard{
   flex-direction: row;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 #chipSilverVisa{
   height: 60px;
@@ -639,6 +699,12 @@ label{
   align-items: center;
   display: flex;
 }
+.pagValid>.solicitud>div{
+  width: 80%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #montoSol{
   color: rgb(29, 87, 68);
   font-weight: bolder;
@@ -656,6 +722,9 @@ label{
   font-weight: 200px;
   color: rgb(3, 44, 14);
   height: 40px;
+  padding: 1.5%;
+  text-transform: uppercase;
+  margin: 1%;
 }
 .solicitud>p{
   width: 500px;
@@ -675,30 +744,85 @@ label{
   display: flex;
   background-image: url(./assets/portal-principal/fondos-pagInicial/fondo3.png);
   background-size: cover;
-  height: 96.3vh;
+  height: 87vh;
   justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.imgSection5{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
 }
 #contactUS{
-  width: 450px;
-  padding: 50px;
-  height: 450px;;
+  width: 65%;
+  padding: 2%;
 }
 .section5>p{
-  width: 500px;
-  padding: 50px;
-  margin: 20px;
-  color:rgb(16, 16, 58);
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+  color: rgb(16, 16, 58);
   flex-direction: column;
   display: flex;
   justify-content: center;
+  font-size: 25px;
 }
 
 footer{
    font-size: 15px;
    text-align: center;
+   background-color: black;
+   color: white;
+   padding: 1%;
 }
 
 
+@media only screen and (min-width:500px) {
+
+  .section4>.figText>div{
+    width: 70%;
+  }
+
+  #imgSection4{
+    /* align-content: center ; */
+    display: flex ;
+    width:30%;
+    padding: 2%;
+  }
+
+}
+@media only screen and (min-width:1075px) {
+
+  header{
+    position: fixed;
+    z-index: 2;
+  }
+
+  h1 {
+   font-size: 35px; 
+   width:25%;
+  }
+
+  .itemsB{
+    width: 75%;
+  }
+
+  .section4>.figText>div{
+   width: 60%;
+  }
+
+  #imgSection4{
+    /* align-content: center ; */
+    width:40%;
+  }
+
+
+
+
+}
 
 
 

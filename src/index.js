@@ -3,11 +3,11 @@ import validator from './validator.js';
 // console.log(validator);
 
 //constantes de barra de navegación
-const inicio = document.getElementById("inicio");
+const home = document.getElementById("home");
 const quienesSomos = document.getElementById("quienesSomos");
-const proposito = document.getElementById("proposito");
+const purpose = document.getElementById("purpose");
 const solicitud = document.getElementById("solicitud");
-const contacto = document.getElementById("contacto");
+const contact = document.getElementById("contact");
 const menu = document.querySelector(".menu");
 
 //constantes principales de secciones
@@ -33,8 +33,8 @@ const copyR = document.querySelector(".copyR");
     const clean= document.getElementById("clean");
 
  //eventos de la barra de navegación
-    //Haciendo Click en pag Inicio
-    inicio.addEventListener("click",() =>{
+    //Haciendo Click en pag home
+    home.addEventListener("click",() =>{
         copyR.classList.remove("hide");
         section1.classList.remove("hide");
         section5.classList.remove("hide");
@@ -51,7 +51,7 @@ const copyR = document.querySelector(".copyR");
         section2.classList.remove("hide")      
     })
     //Haciendo click en la barra: Propósito
-    proposito.addEventListener("click",() => {
+    purpose.addEventListener("click",() => {
         section1.classList.add("hide");
         section5.classList.add("hide");
         section2.classList.add("hide");
@@ -66,8 +66,8 @@ const copyR = document.querySelector(".copyR");
         section4.classList.remove("hide");
         section3.classList.add("hide");
     })
-    //Haciendo click en la barra: contacto
-    contacto.addEventListener("click",() => {
+    //Haciendo click en la barra: contact
+    contact.addEventListener("click",() => {
         section1.classList.add("hide");
         section5.classList.add("hide");
         section2.classList.add("hide");
@@ -96,6 +96,20 @@ const copyR = document.querySelector(".copyR");
         putNumberCard.value = "";
 
     })
+
+//haciendo Click en el botón retornar al main desde el formulario
+
+const btnBackMain = document.getElementById('btnBackMain');
+btnBackMain.addEventListener('click',()=>{
+    // pagValid.classList.add("hide");
+    pagMain.classList.remove("hide");
+    section5.classList.remove("hide");
+    request.classList.add("hide");
+    menu.classList.remove("hide");
+    section1.classList.remove("hide");
+    section2.classList.remove("hide");
+    section3.classList.remove("hide");
+})
 
 //VALIDACIÓN DE TARJETA
 //Constantes del llenado de formulario
