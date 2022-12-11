@@ -47,8 +47,8 @@ const copyR = document.querySelector(".copyR");
         section1.classList.add("hide");
         section5.classList.add("hide");
         section3.classList.add("hide");
-        section4.classList.add("hide");  
-        section2.classList.remove("hide")      
+        section4.classList.add("hide");
+        section2.classList.remove("hide")
     })
     //Haciendo click en la barra: Propósito
     purpose.addEventListener("click",() => {
@@ -56,7 +56,7 @@ const copyR = document.querySelector(".copyR");
         section5.classList.add("hide");
         section2.classList.add("hide");
         section3.classList.remove("hide");
-        section4.classList.add("hide"); 
+        section4.classList.add("hide");
     })
     //Haciendo click en la barra: Solicitud
     solicitud.addEventListener("click",() => {
@@ -69,10 +69,11 @@ const copyR = document.querySelector(".copyR");
     //Haciendo click en la barra: contact
     contact.addEventListener("click",() => {
         section1.classList.add("hide");
-        section5.classList.add("hide");
+        section3.classList.add("hide");
         section2.classList.add("hide");
-        section5.classList.remove("hide");
         section4.classList.add("hide");
+        section5.classList.remove("hide");
+
     })
 
 //Haciendo Click en la sección 4
@@ -165,9 +166,9 @@ const returnMain = document.getElementById ("returnMain");
             nextDiners.classList.add("hide");
             nextMaster.classList.add("hide");
 
-        } 
+        }
         else {
-            
+
             if(validator.isValid(putNumberCard.value)==true){
                 validCard.classList.remove("hide");
                 incomplete.classList.add("hide");
@@ -190,7 +191,7 @@ const returnMain = document.getElementById ("returnMain");
             }
         }
       })
-    
+
     clean.addEventListener("click", () => {
             putName.value = "";
             putLastName.value = "";
@@ -212,9 +213,9 @@ const returnMain = document.getElementById ("returnMain");
         returnMain.classList.add("hide");
         numCardVisa.innerHTML = validator.maskify(putNumberCard.value);
         nameUserVisa.innerHTML = putLastName.value + " "+ putName.value;
-        validUntilVisa.innerHTML = "Fecha de Validez: " + putDateValid.value; 
+        validUntilVisa.innerHTML = "Fecha de Validez: " + putDateValid.value;
     })
-    
+
     btnRequest.addEventListener("click",() => {
         textConfirmation.classList.remove("hide");
         inputEmail.innerHTML = putMail.value;
@@ -244,9 +245,9 @@ cardMasterCard.addEventListener("click",() =>{
         nextDiners.classList.add("hide")
         nextMaster.classList.add("hide");
 
-    } 
+    }
     else {
-        
+
         if(validator.isValid(putNumberCard.value)==true){
             validCard.classList.remove("hide");
             incomplete.classList.add("hide");
@@ -282,9 +283,9 @@ cardMasterCard.addEventListener("click",() =>{
     pagMasterCard.classList.remove("hide");
     textConfirmation.classList.add("hide");
     returnMain.classList.add("hide");
-    numCardMasterCard.innerHTML = validator.maskify(putNumberCard .value); 
+    numCardMasterCard.innerHTML = validator.maskify(putNumberCard .value);
     nameUserMasterCard.innerHTML = putLastName.value + " "+ putName.value;
-    validUntilMasterCard.innerHTML = "Fecha de Validez: " + putDateValid.value; 
+    validUntilMasterCard.innerHTML = "Fecha de Validez: " + putDateValid.value;
 })
 
 //TARJETA DINERS CLUB INTERNATIONAL
@@ -300,9 +301,9 @@ cardDiners.addEventListener("click",() =>{
         nextDiners.classList.add("hide")
         nextMaster.classList.add("hide");
 
-    } 
+    }
     else {
-        
+
         if(validator.isValid(putNumberCard.value)==true){
             validCard.classList.remove("hide");
             incomplete.classList.add("hide");
@@ -338,9 +339,9 @@ cardDiners.addEventListener("click",() =>{
     pagMasterCard.classList.add("hide");
     textConfirmation.classList.add("hide");
     returnMain.classList.add("hide");
-    numCarDiners.innerHTML = validator.maskify(putNumberCard .value); 
+    numCarDiners.innerHTML = validator.maskify(putNumberCard .value);
     nameUserDiners.innerHTML = putLastName.value + " "+ putName.value;
-    validUntilDiners.innerHTML = "Fecha de Validez: " + putDateValid.value; 
+    validUntilDiners.innerHTML = "Fecha de Validez: " + putDateValid.value;
 })
 
 
@@ -364,7 +365,7 @@ cardDiners.addEventListener("click",() =>{
     //         alert('llenar campo vacío')
     //     }
     //     })
-      
+
     //   clean.addEventListener("click", () => {
     //       putName.value = "";
     //       putLastName.value = "";
@@ -372,7 +373,7 @@ cardDiners.addEventListener("click",() =>{
     //       putMail.value = "";
     //       putNumberCard.value = "";
     //   })
-  
+
     //   next.addEventListener("click",() => {
     //       pagValid.classList.remove("hide");
     //       menu.classList.add("hide");
@@ -387,9 +388,9 @@ cardDiners.addEventListener("click",() =>{
     //       returnMain.classList.add("hide");
     //       numCardVisa.innerHTML = validator.maskify(putNumberCard.value);
     //       nameUserVisa.innerHTML = putLastName.value + " "+ putName.value;
-    //       validUntilVisa.innerHTML = "Fecha de Validez: " + putDateValid.value; 
+    //       validUntilVisa.innerHTML = "Fecha de Validez: " + putDateValid.value;
     //   })
-      
+
     //   btnRequest.addEventListener("click",() => {
     //       textConfirmation.classList.remove("hide");
     //       inputEmail.innerHTML = putMail.value;
