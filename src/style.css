@@ -53,6 +53,7 @@ nav > ul > li{
   transition: all 150ms ease;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 nav > ul > li:hover{
@@ -387,7 +388,7 @@ figcaption{
   padding: 2%;
   border-radius: 10px;
   background: #39654a;
-  margin: 5% 0 0;
+  margin: 2% 0 ;
   color: #e5f0f0;
   font-weight: 750;
   border: solid;
@@ -404,7 +405,7 @@ figcaption{
   flex-direction: column;
   display: flex;
   justify-content: center;
-  margin: 5%;
+  margin: 2.5%;
 }
 .form{
   width: 100%;
@@ -435,7 +436,7 @@ figcaption{
   padding: 0 3%;
 }
 
-  .form>div>input, #montoSolicitar {
+  .form>div>input{
     height: 30px;
     margin: 5px 0px;
     width: 60%;
@@ -563,7 +564,6 @@ figcaption{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   width: 100%;
 }
 /*Diseño de tarjeta Visa*/
@@ -571,7 +571,7 @@ figcaption{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 95%;
 }
 .visaCardDesign{
   width: 100%;
@@ -579,23 +579,31 @@ figcaption{
   background-image: url(./assets/Fondos-de-tarjeta/Back-visaC.jpg);
   flex-direction: column;
 }
+.pagVisa>h2{
+  font-weight: 800;
+  font-size: 20px;
+  color: #0f5d7c;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+}
 .imageCard{
   flex-direction: row;
   display: flex;
   justify-content: space-around;
 }
 #chipSilverVisa{
-  height: 60px;
-  max-width: 100px;
+  height: 50px;
+  width: 70px;
   border-radius: 8px;
-  margin: 65px 150px 30px 15px
+  margin: 12% 12% 2% 5%;
 }
 #logoVisa{
-  width: 150px;
-  height:100px;
-  margin: 15px 0px 15px 25px;
+  width: 120px;
+  height: 80px;
+  margin: 5% 0%;
 }
-label{
+label,.validUntilVisa{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 250;
   color: rgb(211, 210, 210);
@@ -604,7 +612,6 @@ label{
   text-transform: uppercase;
 }
 .numCardVisa{
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 250px;
   color: rgb(211, 210, 210);
   margin-left: 25px;
@@ -612,7 +619,6 @@ label{
   text-transform: uppercase;
 }
 .textCardVisa{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300px;
     color: rgb(231, 231, 219) ;
     display: flex;
@@ -622,6 +628,55 @@ label{
     text-transform: uppercase;
     justify-content: space-around;
 }
+
+@media (min-width:375px){
+  .pagVisa{
+    width: 88%;
+  }
+}
+@media (min-width:475px){
+  #chipSilverVisa{
+    margin: 9% 12% 2% 5%;
+  }
+  .visaCardDesign{
+    width:90%
+  }
+  #chipSilverVisa{
+    height: 55px;
+    width: 75px;
+    margin: 9% 12% 2% 2%;
+  }
+  #logoVisa{
+    width: 150px;
+    height: 100px;
+    margin: 2% 0%;
+  }
+}
+
+@media (min-width:675px){
+  .pagVisa{
+    width: 70%;
+  }
+  .visaCardDesign{
+    width:80%
+  }
+}
+
+@media (min-width:875px){
+  .pagVisa{
+    width: 60%;
+  }
+
+  .visaCardDesign{
+    width:75%
+  }
+}
+@media (min-width:1025px){
+  .visaCardDesign{
+    width:60%
+  }
+}
+
 /*Diseño de Tarjeta American Express*/
 /* .pagAmex{
   display: flex;
@@ -668,43 +723,92 @@ label{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 95%;
+  color: #000000;
+  font-weight: 700;
 }
 .dinersCardDesign{
-  width: 530px;
+  width: 100%;
   border-radius: 15px;
   background-image: url(./assets/Fondos-de-tarjeta/Back-diners.jpg);
   flex-direction: column;
   background-size: cover ;
 }
+.pagDiners>h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #39654a;
+}
 #chipSilverDiners{
-  height: 60px;
-  max-width: 100px;
+  height: 50px;
+  width: 70px;
   border-radius: 8px;
-  margin: 65px 150px 30px 15px
-
+  margin: 8% 12% 2% 3%;
 }
 #logoDiners{
-  width: 150px;
-  height:150px;
-  margin: 15px 0px 0px 0px;
+  width: 120px;
+  height: 110px;
+  margin: 2% 0%;
 }
 .numCarDiners{
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400px;
-  color: rgb(134 147 23);
   margin-left: 25px;
   font-size: 18 px;
   text-transform: uppercase;
 }
 .textCardDiners{
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(134 147 23) ;
   display: flex;
   margin: 10px;
   padding: 5px;
   text-transform: uppercase;
   justify-content: space-around;
 }
+
+@media (min-width:375px){
+  .pagDiners{
+    width: 88%;
+  }
+}
+@media (min-width:475px){
+
+  .dinersCardDesign{
+    width:90%
+  }
+  #chipSilverDiners{
+    height: 50px;
+    width: 70px;
+    margin: 8% 12% 2% 0%;
+  }
+}
+
+@media (min-width:675px){
+  .pagDiners{
+    width: 70%;
+  }
+  .dinersCardDesign{
+    width:80%
+  }
+}
+
+@media (min-width:875px){
+  .pagDiners{
+    width: 60%;
+  }
+
+  .dinersCardDesign{
+    width:75%
+  }
+}
+@media (min-width:1025px){
+  .dinersCardDesign{
+    width:60%
+  }
+}
+
+
+
+
+
 
 /*Diseño de Tarjeta MasterCard*/
 .pagMasterCard{
@@ -712,35 +816,42 @@ label{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 95%;
 }
 .masterCardDesign{
-  width: 530px;
+  /* width: 530px; */
+  width:100%;
   border-radius: 15px;
   background-image: url(./assets/Fondos-de-tarjeta/Back-mastercard.jpg);
   flex-direction: column;
   background-size: cover ;
 }
+.pagMasterCard{
+  text-transform: uppercase;
+  text-align: center;
+  color: #39654a;
+}
+
 #chipGoldMaster{
-  height: 60px;
-  max-width: 100px;
+  height: 50px;
+  width: 70px;
   border-radius: 8px;
-  margin: 65px 150px 30px 15px
+  margin: 8% 12% 2% 3%;
 }
 #logoMasterCard{
-  width: 150px;
-  height:150px;
-  margin: 15px 0px 0px 0px;
+  width: 120px;
+  height: 110px;
+  margin: 2% 0%;
 }
-.masterCardDesign>label{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.masterCardDesign>p{
   font-weight: 250;
   color: rgb(199, 167, 61);
   margin-left: 25px;
   font-size: 13px;
   text-transform: uppercase;
+  text-align: left;
 }
 .numCardMasterCard{
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 350px;
   color: rgb(199, 167, 61);
   margin-left: 25px;
@@ -748,7 +859,6 @@ label{
   text-transform: uppercase;
 }
 .textCardMaster{
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(199, 167, 61);
   display: flex;
   margin: 10px;
@@ -756,6 +866,54 @@ label{
   text-transform: uppercase;
   justify-content: space-around;
 }
+
+
+@media (min-width:375px){
+  .pagMasterCard{
+    width: 88%;
+  }
+}
+@media (min-width:475px){
+  .masterCardDesign{
+    width:90%
+  }
+  #chipGoldMaster{
+    height: 50px;
+    width: 70px;
+    margin: 8% 12% 2% 0%;
+  }
+}
+
+@media (min-width:675px){
+  .pagMasterCard{
+    width: 70%;
+  }
+  .masterCardDesign{
+    width:80%
+  }
+}
+
+@media (min-width:875px){
+  .pagMasterCard{
+    width: 60%;
+  }
+
+  .masterCardDesign{
+    width:75%
+  }
+}
+@media (min-width:1025px){
+  .masterCardDesign{
+    width:60%
+  }
+}
+
+
+
+
+
+
+
 
 /*solicitud de monto y mensaje de confirmación*/
 .solicitud{
@@ -770,35 +928,53 @@ label{
     flex-direction: column;
     align-items: center;
 }
+#montoSolicitar {
+  height: 30px;
+  margin: 5px 0px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgb(161 194 190);
+  text-align: center;
+  border: solid 0px;
+}
+
 #montoSol{
   color: rgb(29, 87, 68);
   font-weight: bolder;
-  font-size: 16;
+  font-size: 16px;
 }
 
 #btnRequest{
-  margin: 20px;
+  margin: 15px;
   background: #379c9c;
   color: white;
   font-weight: 700;
   border-radius: 5px;
-  padding: 3%;
+  padding: 2%;
   border: solid 0px;
   text-transform: uppercase;
 }
 .solicitud>p{
-  width: 500px;
-  padding: 32px;
-  margin: 20px;
-  background-color: rgb(122, 194, 184);
+  width: 90%;
+  padding: 5%;
+  margin: 3%;
+  background-color: rgb(66 166 198);
   border-radius: 7px;
-  border-color: rgb(13, 75, 54);
-  border-style: groove
+  color: rgb(5 34 74);
+  text-align: justify;
 }
-/* #returnMain{
-  margin: 10px;
-  padding: 7px;
-} */
+
+@media (min-width:640px){
+
+  .solicitud>p{
+    width: 60%;
+    padding: 3%;
+  }
+
+
+}
+
+
 /*Seccion 5: Contacto*/
 .section5{
   display: flex;
@@ -821,7 +997,6 @@ label{
   padding: 2%;
 }
 .section5>p{
-  /* width: 100%; */
   padding: 2%;
   margin: 2%;
   color: rgb(16, 16, 58);
@@ -845,9 +1020,6 @@ label{
     width: 85%;
   }
 
-  /* .section5>p{
-    width: 50%;
-  } */
 }
 
 

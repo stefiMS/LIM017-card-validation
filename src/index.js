@@ -41,6 +41,7 @@ const copyR = document.querySelector(".copyR");
         section3.classList.remove("hide");
         section2.classList.remove("hide")
         section4.classList.remove("hide");
+        window.scrollTo(0, 0);
     })
     //Haciendo click en la barra: quienes somos
     quienesSomos.addEventListener("click",() => {
@@ -155,7 +156,7 @@ const returnMain = document.getElementById ("returnMain");
 
     //TARJETA VISA
     cardVisa.addEventListener("click",() =>{
-        if( putName.value =="" &&  putLastName.value == "" && putDateValid.value == "" && putMail.value =="" && putNumberCard.value =="" ){
+        if( putName.value ==="" ||  putLastName.value === "" || putDateValid.value === "" || putMail.value ==="" || putNumberCard.value ==="" ){
 
             incomplete.classList.remove("hide");
             validCard.classList.add("hide");
@@ -169,7 +170,7 @@ const returnMain = document.getElementById ("returnMain");
         }
         else {
 
-            if(validator.isValid(putNumberCard.value)==true){
+            if(validator.isValid(putNumberCard.value)){
                 validCard.classList.remove("hide");
                 incomplete.classList.add("hide");
                 invalidCard.classList.add("hide");
@@ -179,7 +180,7 @@ const returnMain = document.getElementById ("returnMain");
                 nextDiners.classList.add("hide");
                 nextMaster.classList.add("hide");
               }
-              else if (validator.isValid(putNumberCard.value)==false){
+              else {
                 validCard.classList.add("hide");
                 invalidCard.classList.remove("hide");
                 incomplete.classList.add("hide");
@@ -230,11 +231,12 @@ const returnMain = document.getElementById ("returnMain");
        section1.classList.remove("hide");
        section2.classList.remove("hide");
        section3.classList.remove("hide");
+       window.scrollTo(0, 0);
     })
 
 //TARJETA MASTERCARD
 cardMasterCard.addEventListener("click",() =>{
-    if( putName.value =="" &&  putLastName.value == "" && putDateValid.value == "" && putMail.value =="" && putNumberCard.value =="" ){
+    if( putName.value ==="" ||  putLastName.value === "" || putDateValid.value === "" || putMail.value ==="" || putNumberCard.value ==="" ){
 
         incomplete.classList.remove("hide");
         validCard.classList.add("hide");
@@ -248,7 +250,7 @@ cardMasterCard.addEventListener("click",() =>{
     }
     else {
 
-        if(validator.isValid(putNumberCard.value)==true){
+        if(validator.isValid(putNumberCard.value)){
             validCard.classList.remove("hide");
             incomplete.classList.add("hide");
             invalidCard.classList.add("hide");
@@ -258,7 +260,7 @@ cardMasterCard.addEventListener("click",() =>{
             nextDiners.classList.add("hide");
             nextMaster.classList.remove("hide");
           }
-          else if (validator.isValid(putNumberCard.value)==false){
+          else {
             validCard.classList.add("hide");
             invalidCard.classList.remove("hide");
             incomplete.classList.add("hide");
@@ -290,7 +292,7 @@ cardMasterCard.addEventListener("click",() =>{
 
 //TARJETA DINERS CLUB INTERNATIONAL
 cardDiners.addEventListener("click",() =>{
-    if( putName.value =="" &&  putLastName.value == "" && putDateValid.value == "" && putMail.value =="" && putNumberCard.value =="" ){
+    if( putName.value ==="" ||  putLastName.value === "" || putDateValid.value === "" || putMail.value ==="" || putNumberCard.value ==="" ){
 
         incomplete.classList.remove("hide");
         validCard.classList.add("hide");
@@ -304,7 +306,7 @@ cardDiners.addEventListener("click",() =>{
     }
     else {
 
-        if(validator.isValid(putNumberCard.value)==true){
+        if(validator.isValid(putNumberCard.value)){
             validCard.classList.remove("hide");
             incomplete.classList.add("hide");
             invalidCard.classList.add("hide");
@@ -314,7 +316,7 @@ cardDiners.addEventListener("click",() =>{
             nextDiners.classList.remove("hide");
             nextMaster.classList.add("hide");
           }
-          else if (validator.isValid(putNumberCard.value)==false){
+          else {
             validCard.classList.add("hide");
             invalidCard.classList.remove("hide");
             incomplete.classList.add("hide");
@@ -348,7 +350,7 @@ cardDiners.addEventListener("click",() =>{
     // //TARJETA AMERICAN EXPRESS
 
     // cardAmericanExp.addEventListener("click",() =>{
-    //     if( putName.value &&  putLastName.value && putDateValid.value && putMail.value && putNumberCard.value ){
+    //     if( putName.value ||  putLastName.value || putDateValid.value || putMail.value || putNumberCard.value ){
     //         if(validator.isValid(putNumberCard.value)==true){
     //             validCard.classList.remove("hide");
     //             invalidCard.classList.add("hide");
